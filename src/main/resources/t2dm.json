@@ -1,0 +1,71 @@
+{
+  "job": {
+    "content": [
+      {
+        "reader": {
+          "name": "mysqlreader",
+          "parameter": {
+            "username": "root",
+            "password": "a12345",
+            "column": [
+              "dt",
+              "f1",
+              "f2",
+              "f3",
+              "f4",
+              "f5",
+              "f6",
+              "f7",
+              "f8",
+              "ts"
+            ],
+            "connection": [
+              {
+                "table": [
+                  "stb1"
+                ],
+                "jdbcUrl": [
+                  "jdbc:mysql://127.0.0.1:3306/db1?useSSL=false&useUnicode=true&charset=UTF-8&generateSimpleParameterMetadata=true"
+                ]
+              }
+            ]
+          }
+        },
+        "writer": {
+          "name": "mysqlwriter",
+          "parameter": {
+            "connection": [
+              {
+                "table": [
+                  "stb2"
+                ],
+                "jdbcUrl":  "jdbc:mysql://127.0.0.1:3306/db2?useSSL=false&useUnicode=true&charset=UTF-8&generateSimpleParameterMetadata=true"
+              }
+            ],
+            "writeMode": "insert",
+            "username": "root",
+            "password": "a12345",
+            "table": "stb2",
+            "column": [
+              "dt",
+              "f1",
+              "f2",
+              "f3",
+              "f4",
+              "f5",
+              "f6",
+              "f7",
+              "f8",
+              "ts"
+            ]
+          }
+        }
+      }
+    ],
+    "setting": {
+      "speed": {
+        "channel": 1
+      }
+    }
+  }
+}
