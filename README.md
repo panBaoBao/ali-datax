@@ -13,5 +13,7 @@ https://github.com/alibaba/DataX/blob/master/userGuid.md
 ### 4、配置datax.home的目录（下载的编译文件解压后的目录）,非常重要！！！执行数据同步任务的时候会根据datax.home去该目录下找对应的执行命令和执行插件
 ![img_3.png](img_3.png)
 
+### 其他
+https://blog.csdn.net/weixin_43164465/article/details/131231096?spm=1001.2014.3001.5502
 
 
